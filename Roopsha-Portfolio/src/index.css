@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "./styles/animations.css";
+
+@theme {
+  --color-midnight: #090D20;
+  --color-violet-deep: #17132D;
+  --color-lavender: #BCA5F5;
+  --color-blush: #F2B8D0;
+  --color-ivory: #FFF5E8;
+  --color-botanical: #789B83;
+  --color-gold: #E8D6A5;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-script: "Dancing Script", cursive;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #090D20;
+    color: #FFF5E8;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+  }
+}
